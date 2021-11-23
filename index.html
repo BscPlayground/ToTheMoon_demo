@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>To The Moon</title>
+    <title>Spiky Walls</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <link rel="stylesheet" href="TemplateData/style.css" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -329,6 +329,7 @@
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
 
     <script>
       const firebaseConfig = {
@@ -342,7 +343,8 @@
       };
 
       // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
+      const app = firebase.initializeApp(firebaseConfig);
+      const defaultAnalytics = firebase.analytics(app);
     </script>
   </body>
 </html>
