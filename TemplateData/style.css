@@ -62,18 +62,15 @@ body {
 .unity-mobile #unity-footer {
   display: none;
 }
-#unity-webgl-logo {
-  float: left;
-  width: 204px;
-  height: 38px;
-  background: url('webgl-logo.png') no-repeat center;
-}
 #unity-build-title {
   float: right;
   margin-right: 10px;
   line-height: 38px;
   font-family: arial;
   font-size: 18px;
+}
+#unity-fullscreen-button:hover {
+  transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
 }
 #unity-fullscreen-button {
   position: absolute;
@@ -86,9 +83,8 @@ body {
   background-position: center;
   background-size: 65%;
 
-  transition: ease-in-out 0.2s;
   cursor: pointer;
-  opacity: 0.3;
+  transition: transform 50ms ease-in-out;
 }
 #unity-mobile-warning {
   position: absolute;
