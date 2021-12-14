@@ -1,6 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      const domain = 'www.2themoon.fun';
+      const domain2 = '2themoon.fun';
+      const host = window.location.host;
+      if (
+        (domain === host || domain2 === host) &&
+        window.location.protocol !== 'https:'
+      ) {
+        window.location.href = 'https://www.2themoon.fun';
+      }
+    </script>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>To The Moon</title>
@@ -18,9 +29,7 @@
       <canvas id="unity-canvas" width="960" height="600"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
-        </div>
+        <div id="unity-progress-bar-empty"><div id="unity-progress-bar-full"></div></div>
       </div>
       <div id="unity-mobile-warning">
         WebGL builds are not supported on mobile devices.
@@ -94,18 +103,11 @@
     <script>
       !(function (e) {
         function r(r) {
-          for (
-            var n, o, a = r[0], d = r[1], b = r[2], i = 0, l = [];
-            i < a.length;
-            i++
-          )
+          for (var n, o, a = r[0], d = r[1], b = r[2], i = 0, l = []; i < a.length; i++)
             (o = a[i]),
-              Object.prototype.hasOwnProperty.call(f, o) &&
-                f[o] &&
-                l.push(f[o][0]),
+              Object.prototype.hasOwnProperty.call(f, o) && f[o] && l.push(f[o][0]),
               (f[o] = 0);
-          for (n in d)
-            Object.prototype.hasOwnProperty.call(d, n) && (e[n] = d[n]);
+          for (n in d) Object.prototype.hasOwnProperty.call(d, n) && (e[n] = d[n]);
           for (u && u(r); l.length; ) l.shift()();
           return c.push.apply(c, b || []), t();
         }
@@ -244,13 +246,7 @@
                     var n = r && ('load' === r.type ? 'missing' : r.type),
                       c = r && r.target && r.target.src;
                     (d.message =
-                      'Loading chunk ' +
-                      e +
-                      ' failed.\n(' +
-                      n +
-                      ': ' +
-                      c +
-                      ')'),
+                      'Loading chunk ' + e + ' failed.\n(' + n + ': ' + c + ')'),
                       (d.name = 'ChunkLoadError'),
                       (d.type = n),
                       (d.request = c),
@@ -269,8 +265,7 @@
           (o.m = e),
           (o.c = n),
           (o.d = function (e, r, t) {
-            o.o(e, r) ||
-              Object.defineProperty(e, r, { enumerable: !0, get: t });
+            o.o(e, r) || Object.defineProperty(e, r, { enumerable: !0, get: t });
           }),
           (o.r = function (e) {
             'undefined' != typeof Symbol &&
