@@ -18,7 +18,7 @@ body {
   transform: translateZ(0);
 }
 #unity-canvas {
-  background: #231f20;
+  background: #161623;
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(0, 163, 255, 0.2);
   overflow: hidden;
@@ -44,18 +44,19 @@ body {
   height: 130px;
   background: url('logo.png') no-repeat center;
   filter: drop-shadow(0 0 60px rgba(0, 163, 255, 1));
+  transform: scale(1.2);
 }
 #unity-progress-bar-empty {
   width: 141px;
   height: 18px;
   margin-top: 10px;
-  background: url('progress-bar-empty-dark.png') no-repeat center;
+  background: url('progress-bar-empty-light.png') no-repeat center;
 }
 #unity-progress-bar-full {
   width: 0%;
   height: 18px;
   margin-top: 10px;
-  background: url('progress-bar-full-dark.png') no-repeat center;
+  background: url('progress-bar-full-light.png') no-repeat center;
 }
 #unity-footer {
   position: relative;
@@ -79,7 +80,7 @@ body {
   bottom: 10px;
   width: 42px;
   height: 42px;
-  background: url('fullscreen.png');
+  background: url('fullscreen-button.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 65%;
