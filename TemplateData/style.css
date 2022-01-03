@@ -44,7 +44,6 @@ body {
   height: 130px;
   background: url('logo.png') no-repeat center;
   filter: drop-shadow(0 0 60px rgba(0, 163, 255, 1));
-  transform: scale(1.2);
 }
 #unity-progress-bar-empty {
   width: 141px;
